@@ -198,21 +198,64 @@
 # account1.credit(500)
 # account1.debit(00)
 
-# Questions 
+                                # Questions 
+
 # Q.1 Define a python class student with attributes name,age and grade and a method is_passing() to check if the student's grade is passing (>=60). 
 
-class Student:
-    def __init__(self,name,age,grade):
-        self.name = name
-        self.age = age
-        self.grade = grade 
-    def is_passing(self):
-        if(self.grade>=60):
-            print("{} of age {} passed with marks {}".format(self.name,self.age,self.grade))
-        else:
-            print("{} of age {} failed with marks {}".format(self.name,self.age,self.grade))
+# class Student:
+#     def __init__(self,name,age,grade):
+#         self.name = name
+#         self.age = age
+#         self.grade = grade 
+#     def is_passing(self):
+#         if(self.grade>=60):
+#             print("{} of age {} passed with marks {}".format(self.name,self.age,self.grade))
+#         else:
+#             print("{} of age {} failed with marks {}".format(self.name,self.age,self.grade))
 
-student1 = Student("Bivek",20,99)
-student1.is_passing()
-student1 = Student("Abhideep",17,35)
-student1.is_passing()
+# student1 = Student("Bivek",20,99)
+# student1.is_passing()
+# student1 = Student("Abhideep",17,35)
+# student1.is_passing()
+
+
+
+# Q2. Create a Python class Book with attributes title,author,and pages, and a method display_info() to display the book's information.
+
+# class Book:
+#     def __init__(self,title,author,pages):
+#         self.title = title
+#         self.author = author
+#         self.pages = pages 
+#     def display_info(self):
+#             print("{} of author {} passed with marks {}".format(self.title,self.author,self.pages))
+
+# Book1 = Book("Bivek",20,99)
+# Book1.is_passing()
+
+
+
+# Q3. Define a Python class Product with attributes name,price and quantity and methods total_sale() to calculate the total price of the products and add_quantity() to add more quantity.
+
+
+# class Product:
+#     def __init__(self,name,price,quantity):
+#         self.name = name
+#         self.price = price
+#         self.quantity = quantity 
+#     def total_sale(self):
+#             print("the total price is {}".format(self.price*self.quantity))
+
+# Book1 = Book("Bivek",20,99)
+# Book1.total_sale()
+
+class Aa:
+    def rr(self):
+        print("Aa")
+
+class Aa1(Aa):
+    def rr(self):
+        super().rr()  #Aa
+        print("Aa1")
+a = Aa1()
+a.rr()                 #Aa1
