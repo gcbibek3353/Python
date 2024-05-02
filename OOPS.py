@@ -249,13 +249,32 @@
 # Book1 = Book("Bivek",20,99)
 # Book1.total_sale()
 
-class Aa:
-    def rr(self):
-        print("Aa")
+# class Aa:
+#     def rr(self):
+#         print("Aa")
 
-class Aa1(Aa):
-    def rr(self):
-        super().rr()  #Aa
-        print("Aa1")
-a = Aa1()
-a.rr()                 #Aa1
+# class Aa1(Aa):
+#     def rr(self):
+#         super().rr()  #Aa
+#         print("Aa1")
+# a = Aa1()
+# a.rr()                 #Aa1
+
+# class greeting:
+#     def aim(self,name = ""):
+#         return "Welcome to Jain " + name
+# g = greeting()
+# print(g.aim())
+# print(g.aim("ram"))
+
+class T:
+    def hh(self,a=None,b=None):
+        if a!=None and b!=None:
+            y = a*b
+            print(y)
+        elif a!=None:
+            print(a**2)
+        else:
+            print("There is no arguments")
+t = T()
+t.hh(4,5)
