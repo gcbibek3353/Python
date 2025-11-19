@@ -43,6 +43,17 @@ print("Logistic Regression Accuracy:", accuracy_score(y_test, model.predict(x_te
 
 # Exp : 2 -------
 
+# class-dataset.csv
+# f1,f2,f3,class
+# 5.1,3.5,1.4,0
+# 4.9,3.1,1.5,0
+# 6.2,2.9,4.3,1
+# 8.9,3.0,4.2,1
+# 7.0,3.2,6.0,2
+# 6.5,3.3,5.7,2
+# 5.0,3.0,1.4,0
+# 6.1,3.8,4.0,1
+
 # --- IMPORTS ---
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
@@ -78,6 +89,18 @@ for m in models:
 
 
 # Exp : 3 -----
+# tree-dataset.csv
+# F1,F2,F3,output
+# 1,5,0,0
+# 2,6,1,0
+# 3,7,1,1
+# 4,8,0,1
+# 5,9,1,1
+# 6,5,0,0
+# 7,6,1,1
+# 8,7,1,1
+# 9,8,0,1
+# 10,9,1,1
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
